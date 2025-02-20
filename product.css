@@ -1,0 +1,155 @@
+.highlighted {
+    background-color: #000;
+    font-weight: 400;
+    font-size: 40px;
+    width: 90%;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+}
+body {
+    font-family: Jua, Mali;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+nav {
+    background-color: #000;
+    font-size: 21px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+nav a:hover {
+    background-color: #555;
+}
+.container {
+    padding: 20px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.product {
+    width: 100%;
+    height: 600px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.product-label {
+    margin-top: 30px;
+    color: #fff;
+    background-color: #000;
+    font-size: 40px;
+}
+.product-price {
+    margin-top: 30px;
+    color: #fff;
+    font-size: 40px;
+}
+.buy-button {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 50px;
+    cursor: pointer;
+}
+input {
+    border: none;
+    font-family: Jua;
+}
+button {
+    border: none;
+    font-family: Jua;
+    font-size: 20px;
+    border-radius: 20px;
+    width: 60px;
+    color: #fff;
+    background-color: #F53E60;
+    cursor: pointer;
+}
+.navbar-brand {
+    width: 15%;
+}
+
+/* Responsive set */
+@media (max-width: 1200px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .product {
+        height: auto;
+    }
+    .product-label, .product-price {
+        font-size: 30px;
+    }
+    .buy-button {
+        padding: 10px;
+        font-size: 16px;
+    }
+    nav {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    nav a {
+        margin: px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .highlighted {
+        font-size: 30px;
+        height: auto;
+        padding: 10px;
+    }
+    nav {
+        font-size: 18px;
+    }
+    nav a {
+        font-size: 1em;
+    }
+    .product-label, .product-price {
+        font-size: 24px;
+    }
+    .buy-button {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+.img-fluid {
+    width: 30px;
+}
+
+.navbar-brand{
+    padding: 0 10px;
+}
+

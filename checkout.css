@@ -1,0 +1,42 @@
+.item_photo {
+    width: 300px;
+    border: solid grey;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+body{
+    font-family: Jua, Mali;
+}
+
+.row {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 2px;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+dl{
+    margin-top: 20px;
+}
+small {
+    font-weight: 500;
+}
+p {
+    font-weight: 500;
+}
+label{
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.checkbox{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+button {
+    margin-bottom: 20px;
+}

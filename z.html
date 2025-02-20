@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Font Kanit & Jua Jraa -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jua&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Deco time -->
+    <style>
+        table,
+        tr,
+        td,
+        th {
+            border: 1px solid black;
+            font-family: Jua, Kanit;
+            text-align: left;
+            font-style: normal;
+            font-weight: 350;
+
+        }
+
+        th {
+            font-size: 25px;
+            line-height: 40px;
+
+
+        }
+
+        td {
+            font-size: 30px;
+            margin-left: 20px;
+        }
+
+        tr {
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            font-family: Kanit;
+        }
+        button{
+            border-radius: 19px;
+            width: 250px;
+            height: 25px;
+            font-family: Jua;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <!-- Logo -->
+            <th colspan="2" style="width: 420px; height: 88px;">
+                <h1 style="margin-left: 10px;">Fatty Jik <br> Studio
+                    <img src="jikLogo.png" style="margin-left: -2px;" width="100px">
+                </h1>
+            </th>
+
+          
+
+            <!-- In table Details -->
+        <tr>
+
+            <tr>
+                <td colspan="2"> 
+                    <button class= "home-button">Home</button>
+                    <button class="product-button">More Product</button>
+                    <button class="cart-button" onclick="window.location.href='payment.html'">Your cart</button>
+      
+                </td>
+            </tr>
+
+            <td> Our product :</td>
+            <td style="font-size: 20px; line-height:20px; margin-top: 30ox;">
+                <br>
+                <b style="margin-left: 10px;">ข้อมูลสินค้าเพิ่มเติม</b>
+                <ul style="line-height: 10px;">
+                    <li>วันวางขาย : 30 / 01 / 2025</li>
+                </ul>
+            </td>
+        <tr>
+      
+            <td style="text-align: center;">
+                <img src="JikWatching.png" width="200px">
+                <br> Jik Watching you : 999B
+            </td>
+            <td style="line-height: 20px; align-items: center; text-align: center;">
+                <p>สินค้าคงเหลือ : 9 ก้อน</p>
+                <p>ใส่จำนวนก้อนที่ต้องการรับน้องจิกไปเลี้ยง</p>
+                <input type="number" id="amount" style="border-radius: 19px; width: 168px; height: 30px;">
+                <br><br>
+                <input type="button" value="ADD TO CART" onclick="showAlert()"
+                    style="border-radius: 19px ; width: 120px; height: 30px; margin-bottom: 30px;">
+                <script>
+                    function showAlert() {
+                        var amount = document.getElementById('amount').value;
+                        alert('รับน้องจิกไปเลี้ยง ' + amount + ' ตุว กดตะกร้าชำระเงินได้เยยจ้ะ');
+                    }
+                </script>
+            </td>
+
+        </tr>
+        <tr>
+            <td style="font-family: Kanit;">
+                <b>ตุ๊กตา JIKJIK</b> รุ่นพิเศษน้องจ้อง เสริมพลังแกร่งให้สกิลเขียนโค้ดของคุณเหมือนมีพี่ซีเนียร์ตึงๆคอย
+                pair programming
+                <br>หากตั้งไว้ที่หลังโต๊ะคอม <br>
+                <b>ข้อควรระวัง</b> : ห้ามซื้อไปอมเนื่องจากผลิตด้วยเส้นใยคริปโตไนท์ อันตรายหากเอาไปตั้งใกล้งูจงอาง
+            </td>
+            <td>
+                <img src="210503.png" width="300px" style="display: block; margin-left: auto; margin-right: auto;">
+                <p style="text-align: center;"> สั่งแล้วเตรียมรับความอ้วนเป็นจำนวนมาก !!!!</p>
+            </td>
+
+        </tr>
+
+    </table>
+
+</body>
+</table>
+
+</html>
